@@ -23,6 +23,11 @@ import LoginForm from '@/components/LoginForm.vue';
 import RegisterForm from '@/components/RegisterForm.vue';
 import UserDashboard from '@/components/UserDashboard.vue';
 import AdminDashboard from '@/components/AdminDashboard.vue';
+import MissingPerson from '@/components/MissingPerson.vue';
+import WeaponDetection from '@/components/WeaponDetection.vue';
+import CriminalDetection from '@/components/CriminalDetection.vue';
+import CrowdManagement from '@/components/CrowdManagement.vue';
+
 
 const routes = [
   { path: '/', component: LandingPage },
@@ -30,6 +35,10 @@ const routes = [
   { path: '/register', component: RegisterForm },
   { path: '/UserDashboard', component: UserDashboard },
   { path: '/AdminDashboard', component: AdminDashboard },
+  { path: '/MissingPerson', component: MissingPerson, name: 'MissingPerson' },
+  { path: '/WeaponDetection', component: WeaponDetection, name: 'WeaponDetection' },
+  { path: '/CriminalDetection', component: CriminalDetection, name: 'CriminalDetection' },
+  { path: '/CrowdManagement', component: CrowdManagement, name: 'CrowdManagement' },
   { path: '/', redirect: '/login' }
 ];
 
